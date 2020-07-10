@@ -33,6 +33,8 @@ class DemoApplicationTests {
     @Autowired
     GridFsTemplate gridFsTemplate;
 
+    @Autowired
+    GridFSBucket gridFSBucket;
 
     @Test
     void contextLoads() {
