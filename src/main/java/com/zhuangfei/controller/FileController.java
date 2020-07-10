@@ -29,7 +29,7 @@ public class FileController {
     // 上传文件控制器
     @RequestMapping(value = "/uploadfile",method = RequestMethod.POST)
     String uploadfile(@RequestParam("file") MultipartFile multiportFile) {
-        String result = "error";
+        String result = "error1";
         try {
             // 获得提交的文件名
             String fileName = multiportFile.getOriginalFilename();
