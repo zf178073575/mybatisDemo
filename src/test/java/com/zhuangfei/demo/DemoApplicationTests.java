@@ -69,16 +69,16 @@ class DemoApplicationTests {
 
     @Test
     public void queryFile() throws IOException {
-        String id = "5f05be4576759f4f5347da9d";
-        //根据id查找文件
-        GridFSFile gridFSFile = gridFsTemplate.findOne(new Query(Criteria.where("_id").is(id)));
-        //打开下载流对象
-        GridFSDownloadStream gridFS = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
-        //创建gridFsSource，用于获取流对象
-        GridFsResource gridFsResource = new GridFsResource(gridFSFile,gridFS);
-        //获取流中的数据
-        String string = IOUtils.toString(gridFsResource.getInputStream(), "UTF-8");
-        System.out.println(string);
+//        String id = "5f05be4576759f4f5347da9d";
+//        //根据id查找文件
+//        GridFSFile gridFSFile = gridFsTemplate.findOne(new Query(Criteria.where("_id").is(id)));
+//        //打开下载流对象
+//        GridFSDownloadStream gridFS = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
+//        //创建gridFsSource，用于获取流对象
+//        GridFsResource gridFsResource = new GridFsResource(gridFSFile,gridFS);
+//        //获取流中的数据
+//        String string = IOUtils.toString(gridFsResource.getInputStream(), "UTF-8");
+//        System.out.println(string);
     }
 
 }
