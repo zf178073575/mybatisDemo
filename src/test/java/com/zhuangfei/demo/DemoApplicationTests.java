@@ -69,7 +69,7 @@ class DemoApplicationTests {
 
     @Test
     public void queryFile() throws IOException {
-        String id = "5f05be4576759f4f5347da9d1";
+        String id = "5f05be4576759f4f5347da9d";
         //根据id查找文件
         GridFSFile gridFSFile = gridFsTemplate.findOne(new Query(Criteria.where("_id").is(id)));
         //打开下载流对象
